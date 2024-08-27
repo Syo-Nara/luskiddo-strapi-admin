@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@strapi/utils": "^4.25.8",
-    "pg": "^8.12.0"
-  }
-}
