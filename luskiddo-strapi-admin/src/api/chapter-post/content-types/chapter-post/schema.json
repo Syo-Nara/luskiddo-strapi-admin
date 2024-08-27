@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chapter_posts",
+  "info": {
+    "singularName": "chapter-post",
+    "pluralName": "chapter-posts",
+    "displayName": "Chapters",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Pages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Commentary": {
+      "type": "text"
+    }
+  }
+}
