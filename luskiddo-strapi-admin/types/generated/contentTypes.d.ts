@@ -401,6 +401,7 @@ export interface ApiPostPost extends Schema.CollectionType {
     singularName: 'post';
     pluralName: 'posts';
     displayName: 'Post';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -408,8 +409,9 @@ export interface ApiPostPost extends Schema.CollectionType {
   attributes: {
     Title: Attribute.String;
     Cover: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Content: Attribute.Text;
     Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    content: Attribute.Blocks;
+    Publication: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
